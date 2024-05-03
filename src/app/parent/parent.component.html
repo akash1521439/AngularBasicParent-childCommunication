@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<!-- <app-child [message]="parentMassage"> -->
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+<p>{{receivedMessage}}</p>
